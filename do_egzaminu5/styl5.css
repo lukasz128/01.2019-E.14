@@ -1,0 +1,45 @@
+body {
+    font-family: Verdana;
+    margin: 0;
+}
+.naglowek {
+    background-color: Sienna;
+    height: 100px;
+    overflow: hidden;
+}
+.naglowek .miniatura {
+    width: 20%;
+    float: left;
+}
+.naglowek .tytul {
+    color: orange;
+    width: 80%;
+    float: left;
+}
+.glowna-sekcja{
+    background-color: burlywood;
+    height: 700px;
+    clear: left;
+}
+.glowna-sekcja .lewy{
+    width: 70%;
+    float: left;
+}
+.glowna-sekcja .prawy {
+    width: 30%;
+    float: left;
+}
+img {
+    margin: 7px;
+    padding: 5px;
+    border: 1px solid RosyBrown;
+}
+img:hover {
+    border-color: maroon;
+}
+.stopka {
+    background-color: Sienna;
+    color: orange;
+    text-align: center;
+    overflow: hidden;
+}

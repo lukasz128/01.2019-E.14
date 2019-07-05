@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title> Zamówienia </title>
+        <link rel="Stylesheet" href="styl4.css">
+    </head>
+    <body>
+        <header class="naglowek">
+            <section class="logo">
+                <img src="logo_.png" alt="hurtownia">
+            </section>
+            
+            <nav class="menu">
+                <a href="index.html"> Strona główna </a>
+                <a href="zamowienia.html"> Zamówienia </a>
+                <a href="blog.html"> Blog o kawie </a>
+                <a href="http://gatunki-kawy.pl" target="_blank"> Odwiedź także</a>
+            </nav>
+        </header>
+        <section class="baner">
+            <h1> Hurtownia kawy </h1>
+        </section>
+        <main class="glowna-sekcja">
+            <section class="lewy">
+                <h2> Oferta </h2>
+                <ol>
+                    <li>Kawa palona Arabia</li>
+                    <li>Kawa palona Robusta</li>
+                    <li>Kawa bezkofeinowa</li>
+                    <li class="through">Kawa zielona</li>
+                </ol>
+            </section>
+            <section class="prawy">
+                <form id="form">
+                    <label>
+                        <span> Podaj numer kawy </span>
+                        <input type="number">
+                    </label>
+                    
+                    <label>
+                        <span> Podaj wagę w dekagramach</span>
+                        <input type="number">
+                    </label>
+                    
+                    <button> Zamów</button>
+                    <div id="answer"></div>
+                </form>
+            </section>
+        </main>
+        <footer class="stopka">
+            <span>Strone przygotował <b> mój pesel</b></span>
+        </footer>
+        
+        <script>
+            const form = document.querySelector("#form");
+            const answer_ = document.querySelector("#answer");
+            
+            function calculation()
+            {
+                let answer = "";
+                
+                if(form.elements[0].value == 1) 
+                    answer = 5 * form.elements[1].value; 
+                else if(form.elements[0].value == 2) 
+                    answer = 7 * form.elements[1].value;
+                else if(form.elements[0].value == 3) 
+                    answer = 6 * form.elements[1].value;
+                else 
+                    answer = 0;
+                
+                return `Kosz zamówienia wynosi: ${answer}zł`;
+                
+            }
+            
+            form.elements[2].addEventListener('click', (e) => {
+                e.preventDefault();
+                answer_.innerHTML = calculation();
+            });
+        </script>
+    </body>
+</html>

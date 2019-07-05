@@ -1,0 +1,51 @@
+body {
+	font-family: Verdana;
+	margin: 0;
+}
+.baner {
+	background: #9692B1;
+	color: #FFF;
+	text-align: center;
+	height: 80px;
+	overflow: hidden;
+}
+.glowna-sekcja .lewy {
+	background: #9692B1;
+	color: #FFF;
+	width: 20%;
+	height: 750px;
+	float: left;
+}
+.glowna-sekcja .prawy1 {
+	background: #FFF4CC;
+	width: 80%;
+	height: 300px;
+	text-align: center;
+	float: right;
+}
+.glowna-sekcja .prawy2 {
+	background: #DBCC93;
+	width: 80%;
+	height: 450px;
+	text-align: center;
+	float: right;
+}
+.stopka {
+	background: #9692B1;
+	color: #FFF;
+	text-align: right;
+}
+a {
+	color: #FFF;
+}
+.glowna-sekcja .prawy1 > img {
+	width: 15%;
+	margin: 20px;
+	cursor: pointer;
+}
+.glowna-sekcja .prawy2 > img {
+	border: 4px solid #9692B1;
+}
+.glowna-sekcja .prawy2 > img:hover {
+	border-color: grey;
+}

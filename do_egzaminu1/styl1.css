@@ -1,0 +1,53 @@
+body {
+	font-family: "Helvetica";
+	margin: 0;
+}
+.boczny-panel {
+	background-color: Navy;
+	color: #FFF;
+	height: 700px;
+	width: 25%;
+	float: left;
+}
+.naglowek {
+	background-color: royalblue;
+	height: 100px;
+	width: 75%;
+	text-align: center;
+	overflow-x: hidden;
+	float: right;
+}
+.srodkowy-panel,
+.dolny-panel {
+	background-color: SteelBlue;
+	height: 300px;
+	width: 75%;
+	float: right;
+}
+.dolny-panel {
+	text-align: center;
+	background-color: royalblue;
+}
+.stopka {
+	background-color: SteelBlue;
+	text-align: center;
+	padding: 20px;
+	clear: both;
+}
+h1 {
+	letter-spacing: 5px;
+}
+form {
+	margin: 30px;
+	line-height: 3;
+}
+form:hover {
+	background-color: DeepSkyBlue;
+}
+label {
+	display: block;
+}
+img {
+	height: 300px;
+	width: 50%;
+}

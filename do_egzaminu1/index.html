@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<title> Filmy </title>
+		<link rel="Stylesheet" href="styl1.css">
+	</head>
+	<body>
+		<aside class="boczny-panel">
+			<h3> Dostępne gatunki filmu </h3>
+			
+			<ol>
+				<li> Sci-Fi </li>
+				<li> animacja </li>
+				<li> dramat </li>
+				<li> horror </li>
+				<li> komedia </li>
+			</ol>
+			
+			<p>
+				<a href="#"> Pobierz obraz </a>
+			</p>
+			
+			<p>
+				<a href="http://www.google.pl" target="_blank"> Sprwadź repertuar kin </a>
+			</p>
+		</aside>
+		
+		<header class="naglowek"> 
+			<h1> FILMOTEKA </h1>
+		</header>
+		
+		<section class="srodkowy-panel">
+			<form action="dodaj.php" method="POST">
+				<label>
+					<span> Tytuł: </span>
+					<input type="text" name="tytul">
+				</label>
+				
+				<label>
+					<span> Gatunek filmu </span>
+					<input type="number" name="gatunek-filmu">
+				</label>
+				
+				<label>
+					<span> Rok produkcji </span>
+					<input type="number" name="rok-produkcji">
+				</label>
+				
+				
+				<label>
+					<span> Ocena </span>
+					<input type="number" name="ocena">
+				</label>
+				
+				<button type="reset"> CZYŚĆ </button>
+				<button> DODAJ </button>
+			</form>
+		</section>
+		
+		<section class="dolny-panel">
+			<img src="kadr.jpg" alt="zdjęcie filmowe">
+		</section>
+		
+		
+		<footer class="stopka">
+			<p> Autor strony: mój pesel </p>
+		</footer>
+	</body>
+</html>

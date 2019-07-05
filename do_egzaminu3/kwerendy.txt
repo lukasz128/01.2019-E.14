@@ -1,0 +1,4 @@
+1. SELECT tytul, rok, ocena FROM filmy WHERE gatunki_id = 5;
+2. SELECT filmy.id, filmy.tytul, rezyserzy.imie, rezyserzy.nazwisko FROM filmy, rezyserzy WHERE filmy.rezyserzy_id = rezyserzy.id;
+3. SELECT id, tytul FROM filmy WHERE rok = 2017 AND id = 6;
+4. nie moge się odczytać

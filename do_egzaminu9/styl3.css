@@ -1,0 +1,39 @@
+body {
+	font-family: Garamond;
+	margin: 0;
+}
+.baner {
+	background-color: RosyBrown;
+	color: #FFF;
+	text-align: center;
+	padding: 10px;
+}
+.form {
+	background-color: DarkSalmon;
+	text-align: center;
+	padding: 40px;
+}
+.glowny-blok .lewy,
+.glowny-blok .prawy {
+	background-color: LightSalmon;
+	height: 300px;
+	width: 30%;
+	float: left;
+}
+.glowny-blok .srodek {
+	background-color: LightSalmon;
+	height: 300px;
+	width: 40%;
+	float: left;
+}
+.stopka {
+	background-color: RosyBrown;
+	color: #FFF;
+	text-align: center;
+	padding: 30px;
+	clear: left;
+}
+ol {
+	border: 2px solid rgb(205, 92, 92);
+	font-size: 150%;
+}

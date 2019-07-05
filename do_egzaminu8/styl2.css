@@ -1,0 +1,37 @@
+body {
+	font-family: Helvetica;
+	margin: 0;
+}
+.naglowek {
+	overflow: hidden;
+}
+.naglowek > * {
+	background-color: #6FACE3;
+	color: #00F;
+	height: 300px;
+	width: 30%;
+	float: left;
+}
+.naglowek .form {
+	width: 40%;
+}
+.glowna-sekcja {
+	background-color: #4C93D2;
+	height: 350px;
+	padding: 20px;
+	text-align:center;
+}
+.stopka {
+	background-color: #2D77BA;
+	color: #FFF;
+	height: 170px;
+	padding: 15px;
+}
+a:link {
+	background-color: LightSkyBlue;
+	padding: 5px;
+	margin: 10px;
+}
+a:visited {
+	background-color: LightSteelBlue;
+}

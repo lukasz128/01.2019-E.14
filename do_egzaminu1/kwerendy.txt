@@ -1,0 +1,4 @@
+1. INSERT INTO `filmy`(tytul, rok, gatunki_id, ocena) VALUES("Suburbicon", 1995, 5, 5);
+2. SELECT filmy.tytul, gatunki.nazwa FROM filmy, gatunki WHERE filmy.gatunki_id = gatunki.id AND filmy.ocena = 6 
+3. SELECT filmy.tytul, filmy.rok FROM filmy WHERE gatunki_id = 3 AND ocena = 5 
+4. CREATE TABLE aktorzy( id int not null AUTO_INCREMENT PRIMARY KEY, imie text not null, nazwisko text not null );

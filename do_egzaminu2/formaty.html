@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<title> Formatowanie </title>
+		<link rel="Stylesheet" href="styl2.css">
+	</head>
+	<body>
+		<header class="baner">
+			<h1> Formatowanie dokumentów HTML </h1>
+		</header>
+		
+		<section class="lewy-panel">
+			<h2> Przykład listy - hobby </h2>
+			<ul>
+				<li>muzyka</li>
+				<li>turystyka</li>
+				<ol> 
+					<li> góry </li>
+					<li> jeziora </li>
+					<li> na rowerze </li>
+				</ol>
+				<li> książki </li>
+			</ul>
+		</section>
+		
+		<section class="srodkowy-panel">
+			<h2> Przykład tabeli - rozkład dnia </h2>
+			
+			<table class="tabela">
+				<tr>
+					<th> Pora dnia </th> 
+					<th> obowiązki </th>
+				</tr>
+				<tr>
+					<td> rano </td>
+					<td> śniadanie </td>
+				</tr>
+				
+				<tr>
+					<td> nie wiem </td>
+					<td> zajęcia dodatkowe </td>
+				</tr>
+				
+				<tr>
+					<td> popołudnie </td>
+					<td rowspan="2"> moje hobby </td>
+				</tr>
+				
+				<tr>
+					<td> wieczór </td>
+				</tr>
+			</table>
+		</section>
+		
+		<section class="prawy-panel">
+			<img src="tekst.png" alt="technologiwe web">
+		</section>
+		
+		
+		<main class="glowny-panel">
+			<form id="form">
+				<label>
+					<p> Podaj rozmiar tekstu w procentach </p>
+					<input type="number">%
+				</label>
+				
+				<label>
+					<select>
+						<option value="normal"> prosty </option>
+						<option value="italic"> kursywa </option>
+					</select>
+				</label>
+				
+				<p>  Jakim kolerem sformatować tekst </p>
+				
+				<button class="btn red-btn" data-color="#F00"> </button>
+				<button class="btn green-btn" data-color="#0F0"> </button>
+				<button class="btn blue-btn" data-color="#00F"> </button>
+			</form>
+				
+				<p id="answer"> To jest przykład pragrafu, który może być dowolnie formatowany przez JavaScript </p>
+		</main>
+		
+		<footer class="stopka">
+			<p> Formatowanie tekstu zajmował się: <i> mój pesel </i> </p>
+			<a href="formatowanie.pl" target="_blank"> Odwiedź także </a>
+		</footer>
+		
+		<script>
+			const answer = document.querySelector("#answer");
+			const form = document.querySelector("#form");
+			
+			function setStyle(color)
+			{
+				answer.style.color = color;
+				answer.style.fontStyle = form.elements[1].value;
+				answer.style.fontSize = `${form.elements[0].value}%`;
+			}
+			
+			for(let i=2;i<5;i++) {
+				form.elements[i].addEventListener('click', (e) =>{
+					e.preventDefault();
+					setStyle(form.elements[i].getAttribute("data-color"));
+				});
+			}
+			
+		</script>
+	</body>
+</html>

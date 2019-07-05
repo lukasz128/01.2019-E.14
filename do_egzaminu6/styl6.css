@@ -1,0 +1,42 @@
+﻿body
+{
+    font-family: Tahoma;
+    margin: 0;
+}
+.baner,
+.stopka{
+    background-color: rgb(72, 209, 204);
+    color: #FFF;
+    text-align: center;
+    padding: 5px;
+}
+.ciasteczka {
+    background-color: rgb(139, 69, 19);
+    color: #FFF;
+    padding: 10px;
+}
+.glowna-sekcja {
+    background-color: rgb(175, 238, 238);
+    height: 600px;
+}
+.glowna-sekcja .lewy {
+    width: 70%;
+    float: left;
+}
+.glowna-sekcja .prawy {
+    width: 30%;
+    float: left;
+}
+p{ 
+    font-size: 150%;
+}
+img {
+    border: 1px solid grey;
+    height: 250px;
+    width: 300px;
+    padding: 5px;
+}
+img:hover {
+    height: 300px;
+    border-color: #000;
+}

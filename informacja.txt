@@ -1,0 +1,6 @@
+Przed otwarciem egzaminu proszê zaimportowaæ bazy.
+
+egzamin1.sql - potrzebny do: do_egzaminu1, do_egzaminu3.
+egzamin2.sql - potrzebny do: do_egzaminu5;
+egzamin3.sql - potrzebny do: do_egzaminu8;
+egzamin4.sql - potrzebny do: do_egzaminu9;
